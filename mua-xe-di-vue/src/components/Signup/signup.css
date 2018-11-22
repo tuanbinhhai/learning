@@ -1,0 +1,120 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
+}
+#signup {
+  flex-grow: 1;
+}
+form {
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+#signup h2 {
+  margin: 0 0 0 0;
+  text-align: center;
+  color: #2b3977;
+  font-family: sans-serif;
+  font-size: 2rem;
+}
+#signup h6{
+  margin-top: 5px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="time"],
+textarea,
+select {
+  font-size: 14px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 7px;
+  width: 80%;
+  background-color: #ffffff;
+  color: black;
+  border:1px solid black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+button {
+  padding: 8px;
+  color: #FFF;
+  background-color: #2b3977;
+  font-size: 14px;
+  text-align: center;
+  font-style: normal;
+  border:1px solid  #2b3977;
+  border-radius: 5px;
+  width: 40%;
+  margin-bottom: 5px;
+  border-radius: 5px !important;
+}
+
+button:hover{
+  background-color:  white;
+  cursor: pointer;
+  color: #2b3977;
+
+}
+
+fieldset {
+  margin-bottom: 10px;
+  border: none;
+}
+
+ #signup legend {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #2b3977;
+  text-align: left;
+}
+
+#signup label {
+  display: block;
+  margin-bottom: 8px;
+  margin-left: 50px;
+  font-family: fantasy;
+  color: black;
+  text-align: left;
+}
+
+.fa-warning {
+  width: 15.98px;
+  display: block;
+}
+
+.is-danger{
+  display: inline-block;
+  color: red;
+  font-size: 0.8em
+}
+
+#changepage {
+  text-align: center;
+}
+
+.message{
+  color: red;
+}
+
+@media screen and (min-width: 480px) {
+  form {
+    max-width: 480px;
+  }
+
+}
