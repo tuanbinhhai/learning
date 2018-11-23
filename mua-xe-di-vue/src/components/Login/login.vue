@@ -22,7 +22,7 @@
 
         <p class="message" v-if="error">{{error}}</p>
 
-        <button class="btn btn-lg btn-primgit sary btn-block btn-nomarl" @click="validateBeforeSubmit">login</button>
+        <button class="btn btn-lg btn-primgit sary btn-block btn-nomarl" @click="validateBeforeSubmit">Login</button>
 
         <p id="changepage">Don't have account <router-link :to="{ name: 'signup' }">Signup</router-link></p>
       </div>

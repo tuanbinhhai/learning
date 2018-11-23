@@ -18,7 +18,7 @@ body {
   margin-bottom: 30px;
 }
 .form-signin-heading{
-  color: #2b3977;
+  color: #00adcf;
 }
 .form-signin .form-control {
   margin-top: 10px;
@@ -50,7 +50,7 @@ body {
 }
 
 .btn-nomarl{
-  background-color: #2b3977;
+  background-color: #1e9340;
   border: none;
   margin-top: 20px;
   margin-bottom: 5px;

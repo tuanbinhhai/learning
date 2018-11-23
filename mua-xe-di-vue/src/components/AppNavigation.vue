@@ -84,7 +84,7 @@ export default {
 
 <style scoped>
 #navigator {
-  background: #2b3977;
+  background: #00a3cb;
 }
 .nav-text {
   color: #ffffff !important;
