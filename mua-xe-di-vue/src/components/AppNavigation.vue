@@ -11,13 +11,13 @@
         <router-link :to="'/'" exact class="nav-link nav-text" active-class="active" data-toggle="tab" role="tab">Home</router-link>
       </li>
       <li class="nav-item">
-        <router-link :to="{ name: 'Compare' }" exact class="nav-link nav-text" active-class="active" data-toggle="tab" role="tab">Compare</router-link>
+        <router-link :to="{ name: 'Compare' }" exact class="nav-link nav-text" data-toggle="tab" role="tab">Compare</router-link>
       </li>
       <li class="nav-item">
-        <router-link :to="{ name: 'Review' }" exact class="nav-link nav-text" active-class="active" data-toggle="tab" role="tab">Review</router-link>
+        <router-link :to="{ name: 'Review' }" exact class="nav-link nav-text" data-toggle="tab" role="tab">Review</router-link>
       </li>
       <li class="nav-item" @click="checkAuth_beforecontinue()">
-        <router-link :to="{ name: 'SellCar' }" exact class="nav-link nav-text" active-class="active" data-toggle="tab" role="tab">Sell</router-link>
+        <router-link :to="{ name: 'SellCar' }" exact class="nav-link nav-text" data-toggle="tab" role="tab">Sell</router-link>
       </li>
       <!-- <li v-if="userstatus.authenticated && !adminstatus.status" class="nav-item">
        <img v-bind:src="userava" class="img-avatar" id="useravar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -40,51 +40,51 @@
 </template>
 
 <script>
-// import auth from '../auth/'
-import router from '../router/'
+  // import auth from '../auth/'
+  // import router from '../router/'
 
-export default {
-  name: 'navigation',
-  data () {
-    return {
-      userava: localStorage.getItem('userava'),
-      userinfo: true,
-      usersavecar: true,
-      user_sell_car: true,
-      user_draft_car: true,
-      posLatitude: 0,
-      posLongitude: 0,
-      localstorageCity: '',
-      // userstatus: auth.user,
-      // adminstatus: auth.admin,
-      signout: {
-        username: '',
-        authentoken: ''
+  export default {
+    name: 'navigation',
+    data () {
+      return {
+        userava: localStorage.getItem('userava'),
+        userinfo: true,
+        usersavecar: true,
+        user_sell_car: true,
+        user_draft_car: true,
+        posLatitude: 0,
+        posLongitude: 0,
+        localstorageCity: '',
+        // userstatus: auth.user,
+        // adminstatus: auth.admin,
+        signout: {
+          username: '',
+          authentoken: ''
+        }
       }
-    }
-  },
-  methods: {
-    // checkAuth_beforecontinue: function () {
-    //   if (auth.user.authenticated) {
-    //     router.push({name: 'SellCar'})
-    //   } else {
-    //     router.push({name: 'login'})
-    //   }
-    // },
-    // logout () {
-    //   var credentials = {
-    //     username: localStorage.getItem('username'),
-    //     authentoken: localStorage.getItem('authentoken')
-    //   }
-    //   auth.logout(this, credentials)
-    // }
-  },
-}
+    },
+    methods: {
+      // checkAuth_beforecontinue: function () {
+      //   if (auth.user.authenticated) {
+      //     router.push({name: 'SellCar'})
+      //   } else {
+      //     router.push({name: 'login'})
+      //   }
+      // },
+      // logout () {
+      //   var credentials = {
+      //     username: localStorage.getItem('username'),
+      //     authentoken: localStorage.getItem('authentoken')
+      //   }
+      //   auth.logout(this, credentials)
+      // }
+    },
+  }
 </script>
 
 <style scoped>
 #navigator {
-  background: #2b3977;
+  background: #00a3cb;
 }
 .nav-text {
   color: #ffffff !important;
