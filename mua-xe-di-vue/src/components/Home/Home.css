@@ -5,9 +5,146 @@
 }
 
 .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row-filter-property {
+  height: 272px;
+}
+
+.col-md-5, .col-md-2 {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.col-left {
+  padding-left: 10px !important;
+}
+
+.content-up {
+  min-height: 15em;
+  background: #fff;
+}
+
+.content-up > h2 {
+  background: #00a3cb;
+  color: #fff;
+  padding: 8px;
+  margin-bottom: 0;
+  font-size: 22px;
+  font-weight: 300;
+  pointer-events: none;
+}
+
+.price {
+  margin-top: 3.5em;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+a:hover {
+  text-decoration: none !important;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.btn-outline-dark {
+  font-size: 18px !important;
+  border: 1px solid #979797 !important;
+  margin: 0.2em;
+  box-shadow: 3px 3px 3px #666;
+  /*width: inherit !important;*/
+}
+
+.btn-price {
+  width: 100%;
+  cursor: pointer;
+}
+
+.btn-price:hover,.brand-hover:hover, .btn-year:hover  {
+  background-color: #f49c20 !important;
+}
+
+.col-mid {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.col-right {
+  padding-left: 5px;
+  padding-right: 10px;
+}
+
+.brand {
+    margin-top: 1.75em;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.col-mid {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.img-brand {
+  margin-top: .5em;
+  border: 1px solid #979797;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #666;
+  padding: .2em;
+  height: 65px !important;
+}
+
+.img-fluid, .img-thumbnail {
+  max-width: 100% !important;
+  height: auto;
+}
+
+.btn-year {
+  display: block !important;
+  width: 75%;
+  margin-left: 1.2em;
+  background: #fff;
+  border: 1px solid #979797;
+  cursor: pointer;
+}
+
+.content-mid {
+  min-height: 16em;
+  margin-bottom: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-mid > img {
+  max-width: 100%;
+  transition: all .3s;
+}
+
+.img-full {
+  width: 100%;
+  height: 100%;
+}
+
+.title-purpose {
+  font-size: 28px;
+  position: relative;
+  color: #fff;
+}
+
+h2 {
+  background: #00a3cb;
+  padding: 8px;
+  margin-bottom: 0;
+  font-size: 22px;
+  font-weight: 300;
+  pointer-events: none;
 }
