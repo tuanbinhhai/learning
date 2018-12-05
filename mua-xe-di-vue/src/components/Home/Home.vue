@@ -117,13 +117,13 @@
         </div>
       </div>
       <div class="row">
-        <a class="col-md-6 col-left">
+        <a href="/search" class="col-md-6 col-left">
           <div class="content-mid">
             <img src="https://sellcar2017.herokuapp.com/static/img/family.6d322a1.png" class="img-fluid img-full">
             <h2 class="title-purpose">XE DÙNG CHO GIA ĐÌNH</h2>
           </div>
         </a>
-        <a class="col-md-6 col-right">
+        <a href="/search" class="col-md-6 col-right">
           <div class="content-mid">
             <img src="https://sellcar2017.herokuapp.com/static/img/enterprise.cf0f53c.png" class="img-fluid img-full">
             <h2 class="title-purpose">XE CHO DOANH NGHIỆP</h2>
@@ -132,21 +132,21 @@
       </div>
 
       <div class="row">
-        <a class="col-md-4 col-left">
+        <a href="/search" class="col-md-4 col-left">
           <div class="content-mid">
             <img src="https://sellcar2017.herokuapp.com/static/img/work.26c638a.png" class="img-fluid img-full">
             <h2 class="title-purpose">XE DÙNG ĐI LẠI</h2>
           </div>
         </a>
-        <a class="col-md-4 col-mid">
+        <a href="/search" class="col-md-4 col-mid">
           <div class="content-mid">
             <img src="https://sellcar2017.herokuapp.com/static/img/travel.5b8ee92.png" class="img-fluid img-full">
             <h2 class="title-purpose">XE DÙNG DU LỊCH</h2>
           </div>
         </a>
-        <a class="col-md-4 col-right">
+        <a href="/search" class="col-md-4 col-right">
           <div class="content-mid">
-            <img src="https://sellcar2017.herokuapp.com/static/img/enterprise.cf0f53c.png" class="img-fluid img-full">
+            <img src="https://sellcar2017.herokuapp.com/static/img/service.592f7c3.png" class="img-fluid img-full">
             <h2 class="title-purpose">XE CHẠY DỊCH VỤ</h2>
           </div>
         </a>
