@@ -84,9 +84,9 @@ a {
 }
 
 .brand {
-    margin-top: 1.75em;
-    margin-left: auto !important;
-    margin-right: auto !important;
+  margin-top: 1.75em;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 .col-mid {
@@ -124,7 +124,7 @@ a {
   overflow: hidden;
 }
 
-.content-mid > img {
+.content-mid > img, .content-down > img {
   max-width: 100%;
   transition: all .3s;
 }
@@ -153,4 +153,96 @@ h2 {
   font-size: 22px;
   font-weight: 300;
   pointer-events: none;
+}
+
+.row-btn-search {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.btn-primary {
+  font-size: 24px !important;
+  border: 1px solid #979797 !important;
+  box-shadow: 3px 3px 3px #666;
+  background: #f49c20 !important;
+  width: 280px;
+}
+
+.hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 8px solid #94d8e9;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.service {
+  color: #00a3cb;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.content-down {
+  min-height: 13em;
+  margin-bottom: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.content-down > img] {
+  max-width: 100%;
+  transition: all .3s;
+}
+
+.title-service {
+    color: #00a3cb;
+    font-size: 28px;
+    margin-top: 40px;
+}
+
+.service-info {
+  font-size: 16px;
+  color: #9b9b9b;
+}
+
+.container-htw {
+  margin-bottom: 40px;
+}
+
+.service-zoom:hover, .show-room:hover {
+  transform: scale(1.1);
+}
+
+.container-showroom {
+  background: #00a3cb;
+  margin-bottom: 60px;
+  padding-bottom: 50px;
+}
+
+.header-showroom {
+  color: #fff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.col-showroom-left {
+  padding-left: 45px;
+  padding-right: 0;
+}
+
+.title-showroom {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.col-showroom-left {
+  padding-left: 45px;
+  padding-right: 0;
+}
+
+.col-showroom-mright {
+  padding-left: 5px;
+  padding-right: 20px;
 }

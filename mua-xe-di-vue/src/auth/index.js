@@ -27,13 +27,13 @@ export default {
         } else {
           localStorage.setItem('userava', response.body.avatar)
         }
-        this.user.authenticated = true
-        // router.go(-1)
-        // router.push({name: 'Homepage'})
-        history.go(-1)
-        setTimeout(function () {
-          window.location.reload()
-        }, 100)
+        this.user.authenticated = true;
+        router.go(-1)
+        router.push({name: 'Home'})
+        // history.go(-1)
+        // setTimeout(function () {
+        //   window.location.reload()
+        // }, 100)
       }).catch((err) => {
         context.error = err.body.errors
       })
@@ -45,8 +45,8 @@ export default {
         localStorage.setItem('username', response.body.username)
         localStorage.setItem('userId', response.body.id)
         localStorage.setItem('userava', this.avatardefault)
-        this.user.authenticated = true
-        router.push({name: 'Homepage'})
+        this.user.authenticated = true;
+        router.push({name: 'Home'})
         location.reload()
       }).catch((err) => {
         context.error = err.body.errors
@@ -63,17 +63,18 @@ export default {
           localStorage.removeItem('userId')
           localStorage.removeItem('query')
           localStorage.removeItem('userava')
-          this.user.authenticated = false
-          router.push({name: 'Homepage'})
+          this.user.authenticated = false;
+          router.push({name: 'Home'})
+          location.reload();
         }
       })
   },
   checkAuth () {
     var jwt = localStorage.getItem('authentoken')
     if (jwt) {
-      this.user.authenticated = true
+      this.user.authenticated = true;
     } else {
-      this.user.authenticated = false
+      this.user.authenticated = false;
     }
   },
   // The object to be passed as a header for authenticated requests

@@ -38,7 +38,7 @@
             </div>
         </div>
         <div class="footer-copyright">
-            <p>Copyright</p>
+            <p>© 20178 Copyright by Sherpa team's (Demo)</p>
         </div>
   </div>
 </template>

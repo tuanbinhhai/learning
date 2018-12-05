@@ -151,6 +151,83 @@
           </div>
         </a>
       </div>
+      <div class="row-btn-search">
+        <div class="col-md-12 col-right">
+          <a href="/search">
+            <button class="btn btn-primary">TÌM XE PHÙ HỢP</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr class="hr">
+    <div class="container">
+      <h1 class="service">DỊCH VỤ</h1>
+      <div class="row">
+        <a class="col-md-6" href="/About">
+          <div class="content-down">
+            <img src="https://sellcar2017.herokuapp.com/static/img/validateinfo.a5a6264.png" alt="Verify Car" class="img-full">
+          </div>
+          <h3 class="title-service">XE ĐƯỢC XÁC NHẬN KIỂM TRA</h3>
+          <p class="service-info">Tất cả xe được đăng tin đều được xác thực thông tin</p>
+        </a>
+
+        <a class="col-md-6" href="/checkCar">
+          <div class="content-down">
+            <img src="https://sellcar2017.herokuapp.com/static/img/checkcar.759c633.png" alt="Check Car Service" class="img-full">
+          </div>
+          <h3 class="title-service">DỊCH VỤ KIỂM TRA XE THEO YÊU CẦU</h3>
+          <p class="service-info">Đội ngũ thợ lành nghề sẽ giúp bạn kiểm tra xác thực tình trạng xe</p>
+        </a>
+      </div>
+    </div>
+    <hr class="hr">
+    <div class="container container-htw">
+      <h1 class="service">SỬ DỤNG ĐƠN GIẢN</h1>
+      <div class="row">
+        <a href="/search" class="col-md-3 service-zoom">
+          <img src="../../assets/images/xe1.png" alt="Find Car" class="img-fluid">
+          <h3 class="title-service">TÌM XE DỄ DÀNG</h3>
+          <p class="service-info">Dễ dàng tìm kiếm xe phù hợp với nhu cầu sử dụng của bạn</p>
+        </a>
+        <a href="/compare" class="col-md-3 service-zoom">
+          <img src="../../assets/images/compare.png" alt="Find Car" class="img-fluid">
+          <h3 class="title-service">SO SÁNH XE</h3>
+          <p class="service-info">So sánh chức năng và giá cả để chọn được xe đáng tiền nhất</p>
+        </a>
+        <a href="/About" class="col-md-3 service-zoom">
+          <img src="../../assets/images/about.png" alt="Find Car" class="img-fluid">
+          <h3 class="title-service">THỢ KIỂM TRA</h3>
+          <p class="service-info">Xe được kiểm tra bởi thợ có kinh nghiệm</p>
+        </a>
+        <a href="/bestPrice" class="col-md-3 service-zoom">
+          <img src="../../assets/images/bestprice.png" alt="Find Car" class="img-fluid">
+          <h3 class="title-service">GIÁ TỐT NHẤT</h3>
+          <p class="service-info">Mua xe với giá tốt nhất phù hợp với giá trị xe</p>
+        </a>
+      </div>
+    </div>
+    <div class="container-fluid container-showroom">
+      <h1 class="header-showroom">SHOWROOM GẦN BẠN</h1>
+      <div class="container">
+        <div class="row">
+          <a href="http://www.audi.vn/sea/web/vnen.html" target="_blank" class="col-md-3 col-showroom-left content-down">
+            <img src="https://sellcar2017.herokuapp.com/static/img/audihome.5704d94.png" alt="Audi" class="show-room">
+            <h3 class="title-showroom">AUDI Đà Nẵng</h3>
+          </a>
+          <a href="https://www.ford.com.vn/" target="_blank" class="col-md-3 col-showroom-left content-down">
+            <img src="https://sellcar2017.herokuapp.com/static/img/fordhome.063ce63.png" alt="Ford" class="show-room">
+            <h3 class="title-showroom">FORD Đà Nẵng</h3>
+          </a>
+          <a href="http://www.nissan.com.vn/" target="_blank" class="col-md-3 col-showroom-mright content-down">
+            <img src="https://sellcar2017.herokuapp.com/static/img/nissanhome.5c2dae6.png" alt="Nissan" class="show-room">
+            <h3 class="title-showroom">NISSAN Đà Nẵng</h3>
+          </a>
+          <a href="http://www.kiamotorsvietnam.com.vn/" target="_blank" class="col-md-3 col-showroom-mright content-down">
+            <img src="https://sellcar2017.herokuapp.com/static/img/kiahome.59610f4.png" alt="Kia" class="show-room">
+            <h3 class="title-showroom">KIA Đà Nẵng</h3>
+          </a>
+        </div>
+      </div>
     </div>
   </div>
 </template>

@@ -19,17 +19,22 @@
       <li class="nav-item" @click="checkAuth_beforecontinue()">
         <router-link :to="{ name: 'SellCar' }" exact class="nav-link nav-text" data-toggle="tab" role="tab">Sell</router-link>
       </li>
-      <!-- <li v-if="userstatus.authenticated && !adminstatus.status" class="nav-item">
+      <li v-if="userStatus" class="nav-item">
        <img v-bind:src="userava" class="img-avatar" id="useravar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
        <div id="userinfo" class="dropdown-menu">
-         <a class="dropdown-item" @click="routeruserinfo()">{{this.JsonContent.userinfo}}</a>
+         <a class="dropdown-item" @click="routeruserinfo()">Thông tin cá nhân</a>
+         <a class="dropdown-item" @click="routerusersellcar()">Xe đang bán</a>
+         <a class="dropdown-item" @click="routeruserdraftcar()">Xe lưu nháp</a>
+         <a class="dropdown-item" @click="routerusersavecar()">Xe yêu thích</a>
+         <a <button class="nav-link signout-btn" v-if="userStatus" @click="logout()">Đăng xuất</button></a>
+        <!--  <a class="dropdown-item" @click="routeruserinfo()">{{this.JsonContent.userinfo}}</a>
          <a class="dropdown-item" @click="routerusersellcar()">{{this.JsonContent.sellinglist}}</a>
          <a class="dropdown-item" @click="routeruserdraftcar()">{{this.JsonContent.draftlist}}</a>
          <a class="dropdown-item" @click="routerusersavecar()">{{this.JsonContent.savedlist}}</a>
-         <a <button class="nav-link signout-btn" v-if="userstatus.authenticated" @click="logout">{{this.JsonContent.buttonlogout}}</button></a>
+         <a <button class="nav-link signout-btn" v-if="userStatus.authenticated" @click="logout">{{this.JsonContent.buttonlogout}}</button></a> -->
        </div>
-     </li> -->
-      <li class="nav-item">
+     </li>
+      <li v-if="!userStatus" class="nav-item">
         <router-link :to="{ name: 'login' }" class="nav-link signup-btn">Login</router-link>
       </li>
     </ul>
@@ -40,8 +45,8 @@
 </template>
 
 <script>
-  // import auth from '../auth/'
-  // import router from '../router/'
+  import auth from '../auth/index.js'
+  import router from '../router/'
 
   export default {
     name: 'navigation',
@@ -55,8 +60,8 @@
         posLatitude: 0,
         posLongitude: 0,
         localstorageCity: '',
-        // userstatus: auth.user,
-        // adminstatus: auth.admin,
+        userStatus: auth.user.authenticated,
+        // adminStatus: auth.admin,
         signout: {
           username: '',
           authentoken: ''
@@ -64,6 +69,14 @@
       }
     },
     methods: {
+      logout() {
+        var credentials = {
+          authentoken: localStorage.getItem('authentoken'),
+          username: localStorage.getItem('username'),
+          id: localStorage.getItem('userId')
+        }
+        auth.logout(this, credentials);
+      },
       // checkAuth_beforecontinue: function () {
       //   if (auth.user.authenticated) {
       //     router.push({name: 'SellCar'})
@@ -71,14 +84,7 @@
       //     router.push({name: 'login'})
       //   }
       // },
-      // logout () {
-      //   var credentials = {
-      //     username: localStorage.getItem('username'),
-      //     authentoken: localStorage.getItem('authentoken')
-      //   }
-      //   auth.logout(this, credentials)
-      // }
-    },
+    }
   }
 </script>
 
