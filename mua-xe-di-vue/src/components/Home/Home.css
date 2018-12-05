@@ -1,0 +1,13 @@
+.home {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  background: #f6f6f6;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
