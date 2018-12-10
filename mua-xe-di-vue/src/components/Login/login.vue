@@ -3,7 +3,7 @@
 
     <div class="wrapper">
       <div class="form-signin">
-        <h2 class="form-signin-heading">Login</h2>
+        <h3 class="form-signin-heading">Login</h3>
         <input v-model="signin.username" v-on:keyup.enter="validateBeforeSubmit"
                @focus="disabled_error()" type="text" class="form-control" name="username"
                placeholder="Username" v-validate="'required|min:6|max:120'"

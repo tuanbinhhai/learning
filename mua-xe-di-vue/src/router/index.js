@@ -4,6 +4,7 @@ import Home from '../components/Home/Home.vue'
 import login from '../components/Login/login.vue'
 import signup from '../components/Signup/signup.vue'
 import Review from '../components/Review/Review.vue'
+import Search from '../components/Search/Search.vue'
 import 'bootstrap'
 import pagination from 'vuejs-uib-pagination'
 
@@ -32,7 +33,12 @@ export default new Router({
       name: 'Review',
       component: Review,
       props: true
-    }
+    },
+    {
+      path: '/search',
+      name: 'Search',
+      component: Search
+    },
   ],
   mode: 'history'
 })

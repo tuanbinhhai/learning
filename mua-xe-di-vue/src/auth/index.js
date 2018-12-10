@@ -31,9 +31,9 @@ export default {
         router.go(-1)
         router.push({name: 'Home'})
         // history.go(-1)
-        // setTimeout(function () {
-        //   window.location.reload()
-        // }, 100)
+        setTimeout(function () {
+          window.location.reload()
+        }, 100)
       }).catch((err) => {
         context.error = err.body.errors
       })

@@ -84,6 +84,10 @@
       //     router.push({name: 'login'})
       //   }
       // },
+    },
+    created() {
+      auth.checkAuth();
+      this.userStatus = auth.user.authenticated;
     }
   }
 </script>

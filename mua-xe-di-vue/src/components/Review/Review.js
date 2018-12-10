@@ -1,7 +1,6 @@
-import pagination from 'vuejs-uib-pagination'
+// import pagination from 'vuejs-uib-pagination'
 export default {
   name: 'review',
-  components: { pagination },
   data() {
     return {
       loading: true,
