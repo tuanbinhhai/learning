@@ -119,3 +119,129 @@
     left: 140px;
     top: 10px;
 }
+
+#search .pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 20%;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+.car-row {
+    margin-bottom: 15px;
+}
+
+.container-listview {
+    background: #eff0f1;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.img-car {
+    height: 17em !important;
+    width: 20em;
+}
+
+.text-left {
+    text-align: left!important;
+}
+
+.car-name {
+    font-size: 24px;
+}
+
+.text-right {
+    text-align: right!important;
+}
+
+.check-badge {
+    color: #6eb61c;
+    border: 1px solid #6eb61c;
+    background: #fff;
+    padding: 5px 25px;
+    border-radius: 5px;
+}
+
+.price {
+    font-size: 22px;
+    margin-top: 15px;
+    color: #d52b40;
+    font-weight: 600;
+}
+
+.year-distance {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.year {
+    margin-right: 10px;
+}
+
+.describe {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+p {
+    line-height: 2.8ex;
+    height: 8ex;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-spacing: 1.5px;
+}
+
+.addition-info {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.liked-car {
+    margin-right: 10px;
+}
+
+.date-create {
+    margin-right: 10px;
+}
+
+.addition-information {
+    text-align: left;
+    font-size: 16px;
+    color: #00a3cb;
+}
+
+.hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #94d8e9;
+    margin: .4em 0;
+    padding: 0;
+}
+
+.review-news {
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.news-link {
+    text-decoration: none;
+    color: #000;
+    display: inline;
+}
+
+.news-image {
+    width: 96%;
+}
+
+a:hover {
+  color: inherit !important;
+  text-decoration: none !important;
+}

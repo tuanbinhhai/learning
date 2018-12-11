@@ -1,4 +1,3 @@
-// import pagination from 'vuejs-uib-pagination'
 export default {
   name: 'review',
   data() {
