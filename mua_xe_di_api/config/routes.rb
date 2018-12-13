@@ -5,4 +5,11 @@ Rails.application.routes.draw do
   post '/signup', to: 'users#create'
   post '/signin', to: 'authentokens#create'
   post '/signout', to: 'authentokens#destroy'
+
+  # Cars routes
+  get '/cars/brands', to: 'cars#brand'
+  get 'cars/models/:brand', to: 'cars#model'
+  get 'cars/years/:brand/:model', to: 'cars#year'
+  get '/filter', to: 'cars#filter'
+
 end
