@@ -1,0 +1,283 @@
+#car-detail {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.container-car-brand {
+    margin-top: 3em;
+    margin-bottom: 2.5em;
+}
+
+.col-car-brand {
+    text-align: left;
+}
+
+.col-compare-save {
+    text-align: right;
+}
+
+.compareCar {
+    background: #eff0f1;
+    padding: 10px;
+    color: #a3a4a4;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#fa-compare {
+    font-size: 22px;
+    line-height: 30px;
+    padding-right: 3px;
+}
+
+.likeCar {
+    background: #eff0f1;
+    padding: 10px;
+    color: #a3a4a4;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#fa-likeCar {
+    font-size: 22px;
+    padding-right: 3px;
+}
+
+.hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #94d8e9;
+    margin: .4em 0;
+    padding: 0;
+}
+
+#clear-padding {
+    padding: 0;
+}
+
+.carousel {
+    position: relative;
+}
+
+#car-carousel {
+    margin-top: 20px;
+}
+
+.carousel-item > .thumb {
+    width: 33.33%;
+    cursor: pointer;
+    float: left;
+}
+
+.container-car-specs {
+    margin-top: 2em;
+}
+
+.title-car-specs] {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.row-car-specs {
+    text-align: left;
+}
+
+.header-car-specs {
+    color: #0332c3;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.row-description {
+    text-align: left;
+}
+
+.car-description {
+    line-height: 2.8ex;
+    word-spacing: 1.5px;
+}
+
+p {
+    text-align: left;
+    overflow: '' !important;
+}
+
+.row-post {
+    padding: 15px 0 15px 15px;
+    margin-bottom: 60px;
+}
+
+#col-cmt-box {
+    padding-right: 0;
+    background: #f2f2f2;
+    padding: 10px;
+}
+
+.txtarea-content {
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    background: none repeat scroll 0 0 rgba(0,0,0,.07);
+    border-color: -moz-use-text-color #fff #fff -moz-use-text-color;
+    -o-border-image: none;
+    border-image: none;
+    border-radius: 6px 6px 6px 6px;
+    border-style: none solid solid none;
+    border-width: medium 1px 1px medium;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.12);
+    color: #555;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 1em;
+    line-height: 1.4em;
+    padding: 5px 8px;
+    transition: background-color .2s ease 0s;
+}
+
+#btn-post {
+    float: right;
+    width: 80px;
+    margin-top: 5px;
+    background: #00a3cb !important;
+    font-size: 15px !important;
+}
+
+.row-border {
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+.cmt-content {
+    text-align: left;
+}
+
+.post-name {
+    color: #0332c3;
+}
+
+.user-comment {
+	padding-top: 20px;
+}
+
+.container-seller {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+#car-price {
+    color: #d0021b;
+    font-size: 26px;
+}
+
+.container-seller > h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.date-post {
+    font-weight: 600;
+}
+
+.btn-contact {
+    width: 100%;
+    background: #f49c20;
+    font-size: 20px;
+    color: #fff;
+}
+
+.container-verified {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.container-verified > h5 {
+    color: #00a3cb;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.container-checked {
+    border: 1px solid #62b009;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#icon-checked {
+    font-size: 40px;
+    margin-top: .15em;
+    color: #62b009;
+}
+
+#title-check {
+    font-size: 20px;
+    color: #62b009;
+}
+
+#span-check {
+    font-size: 15px;
+}
+
+.expert-check {
+    font-size: 18px;
+    margin-top: 1em;
+    color: #00a3cb;
+    font-weight: 400;
+}
+
+.gauge {
+    position: relative;
+    margin: 15px auto;
+    width: 300px;
+    height: 150px;
+    background: #efefef;
+    border-radius: 400px 400px 0 0;
+    overflow: hidden;
+    box-shadow: 0 1px 5px #999;
+}
+
+.poor {
+    background: pink;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.fair {
+    background: #ffe5cc;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.good {
+    background: #ffc;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.excellent {
+    background: #cfc;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.needle {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    z-index: 2;
+    margin-left: -8px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 110px solid #000;
+    border-radius: 0 0 10px 10px;
+    -webkit-transform: rotate(var(--needle-degree));
+    transform: rotate(var(--needle-degree));
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-animation: needle-data-v-235b44a8 4s 1;
+    animation: needle-data-v-235b44a8 4s 1;
+}

@@ -5,6 +5,7 @@ import login from '../components/Login/login.vue'
 import signup from '../components/Signup/signup.vue'
 import Review from '../components/Review/Review.vue'
 import Search from '../components/Search/Search.vue'
+import Detail from '../components/Detail/Detail.vue'
 import 'bootstrap'
 import pagination from 'vuejs-uib-pagination'
 
@@ -38,6 +39,11 @@ export default new Router({
       path: '/search',
       name: 'Search',
       component: Search
+    },
+    {
+      path: '/car/:id',
+      name: 'Detail',
+      component: Detail
     },
   ],
   mode: 'history'

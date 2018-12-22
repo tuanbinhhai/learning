@@ -15,41 +15,41 @@ export default {
       reviews_array: [],
       searchWord: '',
       no_cars: false,
-      money: BAT_KY,
-      car_maker: BAT_KY,
-      car_color: BAT_KY,
-      doi_xe: BAT_KY,
-      moneys: [
+      price: BAT_KY,
+      brand: BAT_KY,
+      color: BAT_KY,
+      year: BAT_KY,
+      prices: [
           {
-              "value": "3",
+              "value": "price<300",
               "text": ">300tr"
           },
           {
-              "value": "3-6",
+              "value": "price>300and price<600",
               "text": "300tr - 600tr"
           },
           {
-              "value": "6-9",
+              "value": "price>600and price<900",
               "text": "600tr - 900tr"
           },
           {
-              "value": "9-15",
+              "value": "price>900and price<1500",
               "text": "900tr - 1.5 tỷ"
           },
           {
-              "value": "15-30",
+              "value": "price>1500and price<3000",
               "text": "1.5 tỷ - 3 tỷ"
           },
           {
-              "value": "30-50",
+              "value": "price>3000and price<5000",
               "text": "3 tỷ - 5 tỷ"
           },
           {
-              "value": "50-70",
+              "value": "price>5000and price<7000",
               "text": "5 tỷ - 7 tỷ"
           },
           {
-              "value": "70-100",
+              "value": "price>7000and price<10000",
               "text": "7 tỷ - 10 tỷ"
           },
           {
@@ -57,45 +57,45 @@ export default {
               "text": "Bất kỳ"
           }
       ],
-      car_makers: [
+      brands: [
           {
-              "value": "honda",
+              "value": "Honda",
               "text": "Honda"
           },
           {
-              "value": "toyota",
+              "value": "Toyota",
               "text": "Toyota"
           },
           {
-              "value": "mazda",
+              "value": "Mazda",
               "text": "Mazda"
           },
           {
-              "value": "mercedes-benz",
+              "value": "Mercedes-Benz",
               "text": "Mercedes-Benz"
           },
           {
-              "value": "audi",
+              "value": "Audi",
               "text": "Audi"
           },
           {
-              "value": "hyundai",
+              "value": "Hyundai",
               "text": "Hyundai"
           },
           {
-              "value": "ford",
+              "value": "Ford",
               "text": "Ford"
           },
           {
-              "value": "kia",
+              "value": "KIA",
               "text": "KIA"
           },
           {
-              "value": "50-70",
+              "value": "BMW",
               "text": "BMW"
           },
           {
-              "value": "70-100",
+              "value": "Chervolet",
               "text": "Chervolet"
           },
           {
@@ -103,49 +103,49 @@ export default {
               "text": "Bất kỳ"
           }
       ],
-      car_colors: [
+      colors: [
           {
-              "value": "black",
+              "value": "Đen",
               "text": "Đen"
           },
           {
-              "value": "white",
+              "value": "Trắng",
               "text": "Trắng"
           },
           {
-              "value": "silver",
+              "value": "Bạc",
               "text": "Bạc"
           },
           {
-              "value": "red",
+              "value": "Đỏ",
               "text": "Đỏ"
           },
           {
-              "value": "gray",
+              "value": "Xám",
               "text": "Xám"
           },
           {
-              "value": "yellow",
+              "value": "Vàng",
               "text": "Vàng"
           },
           {
-              "value": "green",
+              "value": "Xanh",
               "text": "Xanh"
           },
           {
-              "value": "brown",
+              "value": "Nâu",
               "text": "Nâu"
           },
           {
-              "value": "cam",
+              "value": "Cam",
               "text": "Cam"
           },
           {
-              "value": "tim",
+              "value": "Tím",
               "text": "Tím"
           },
           {
-              "value": "hon_hop",
+              "value": "Hỗn hợp",
               "text": "Hỗn hợp"
           },
           {
@@ -153,7 +153,7 @@ export default {
               "text": "Bất kỳ"
           }
       ],
-      car_lives: [
+      years: [
           {
               "value": "2016",
               "text": "2016"
@@ -236,16 +236,40 @@ export default {
         })
     },
     selectKhoanTien: function(val) {
-      this.money = val;
+      this.price = val;
     },
     selectHangXe: function(val) {
-      this.car_maker = val;
+      this.brand = val;
     },
     selectMauXe: function(val) {
-      this.car_color = val;
+      this.color = val;
     },
     selectDoiXe: function(val) {
-      this.doi_xe = val;
+      this.year = val;
+    },
+    filterXe: function() {
+      this.search_cars = [];
+      let query = "";
+      if (this.price.value != 'batky') query += this.price.value;
+      if (this.brand.value != 'batky') query += this.brand.value;
+      if (this.color.value != 'batky') query += this.color.value;
+      if (this.year.value != 'batky') query += this.year.value;
+      console.log(query);
+      let url = 'https://timxengon.herokuapp.com/filter?query=' + query + '&page=' + this.pagination.currentPage;
+      this.$http.get(url)
+        .then(response => {
+            for (var i in response.data) {
+              this.search_cars.push(response.data[i])
+            }
+            this.search_cars.push(response.data[i])
+            this.loading = false;
+            this.totalpages = this.search_cars[0];
+            this.no_cars = (this.totalpages !== 0) ? false : true;
+
+        }).catch((err) => {
+          this.error = err.body.errors
+        })
+
     }
   },
   created () {

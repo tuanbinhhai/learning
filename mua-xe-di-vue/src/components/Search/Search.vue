@@ -26,49 +26,49 @@
               <div class="col-md-3 filter-left">
                 <span>Khoản tiền</span>
                 <div class="dropdown">
-                  <button id="dropdownMenuButton" class="btn btn-secondary filter-price" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false" v-model="money.value">{{money.text}}
+                  <button id="dropdownMenuButton" class="btn btn-secondary filter-price" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false" v-model="price.value">{{price.text}}
                     <i class="fas fa-caret-down caret-down-price"></i>
                   </button>
                   <div aria-labelledby="dropdownMenuButton" class="dropdown-menu">
-                    <a class="dropdown-item" v-for="money in moneys" @click="selectKhoanTien(money)"> {{money.text}}</a>
+                    <a class="dropdown-item" v-for="price in prices" @click="selectKhoanTien(price)"> {{price.text}}</a>
                   </div>
                 </div>
               </div>
               <div class="col-md-3 filter-midleft">
                 <span>Hãng xe</span>
                 <div class="dropdown">
-                  <button id="dropdownMenuButton" class="btn btn-secondary filter-brand" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false">{{car_maker.text}}
+                  <button id="dropdownMenuButton" class="btn btn-secondary filter-brand" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false">{{brand.text}}
                     <i class="fas fa-caret-down caret-down-brand"></i>
                   </button>
                   <div aria-labelledby="dropdownMenuButton" class="dropdown-menu">
-                    <a  v-for="car_maker in car_makers" class="dropdown-item" @click="selectHangXe(car_maker)">{{car_maker.text}}</a>
+                    <a  v-for="brand in brands" class="dropdown-item" @click="selectHangXe(brand)">{{brand.text}}</a>
                   </div>
                 </div>
               </div>
               <div class="col-md-2 filter-midright">
                 <span>Màu xe</span>
                 <div class="dropdown">
-                  <button id="dropdownMenuButton" class="btn btn-secondary filter-color" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false">{{car_color.text}}
+                  <button id="dropdownMenuButton" class="btn btn-secondary filter-color" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false">{{color.text}}
                     <i class="fas fa-caret-down caret-down-color"></i>
                   </button>
                   <div aria-labelledby="dropdownMenuButton" class="dropdown-menu">
-                    <a v-for="color in car_colors" class="dropdown-item" @click="selectMauXe(color)">{{color.text}}</a>
+                    <a v-for="color in colors" class="dropdown-item" @click="selectMauXe(color)">{{color.text}}</a>
                   </div>
                 </div>
               </div>
               <div class="col-md-2 filter-right">
                 <span>Đời xe</span>
                 <div class="dropdown">
-                  <button id="dropdownMenuButton" class="btn btn-secondary filter-year" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false">{{doi_xe.text}}
+                  <button id="dropdownMenuButton" class="btn btn-secondary filter-year" aria-haspopup="true" data-toggle="dropdown" aria-expanded="false">{{year.text}}
                     <i class="fas fa-caret-down caret-down-year"></i>
                   </button>
                   <div aria-labelledby="dropdownMenuButton" class="dropdown-menu">
-                    <a v-for="doixe in car_lives" class="dropdown-item" @click="selectDoiXe(doixe)">{{doixe.text}}</a>
+                    <a v-for="year in years" class="dropdown-item" @click="selectDoiXe(year)">{{year.text}}</a>
                   </div>
                 </div>
               </div>
               <div class="col-md-2 filter-button">
-                <button class="btn-filter">Lọc tìm</button>
+                <button class="btn-filter" @click="filterXe()">Lọc tìm</button>
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@
         <!-- WAITING! Pagination -->
 
         <div class="row car-row" v-for="car in search_cars[1]">
-          <a class="container container-listview" href="/car/79">
+          <a class="container container-listview" :href="'/car/'+ car.id">
             <div class="row">
               <div class="col-md-4">
                 <img :src="car.img" class="img-fluid img-car">
