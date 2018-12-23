@@ -20,7 +20,6 @@ export default {
           this.car = response.data.car;
           this.seller = response.data.seller;
           this.comments = response.data.comments;
-          console.log(this.car);
           this.loading = false;
         }).catch((err) => {
           this.error = err.body

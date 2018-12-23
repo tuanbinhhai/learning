@@ -94,7 +94,7 @@
                       </tr>
                       <tr>
                         <th scope="row">Tiêu thụ: </th>
-                        <td>{{car.fuel_consumption}} l/100km</td>
+                        <td>{{car.fuel_consumption}}</td>
                       </tr>
                     </tbody>
                   </table>
@@ -165,7 +165,7 @@
                       </div>
                     </div>
                   </div>
-                  <div>
+                  <div v-if="comments.length > 0">
                     <div class="row row-border">
                       <div class="col-md-2">
                         <img  src="https://www.bootdey.com/img/Content/user_1.jpg" alt="user profile image" class="img-avatar">
@@ -197,8 +197,31 @@
                 <span>Đăng ngày: </span>
                 <span class="date-post" v-if="car.created_at">{{car.created_at.substring(0, 10)}}</span>
                 <h1>
-                  <button type="button" class="btn btn-contact">Liên hệ</button>
+                  <button type="button" class="btn btn-contact" data-target="#exampleModal" data-toggle="modal">Liên hệ</button>
                 </h1>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Vui long goi:</h5>
+                      </div>
+                      <div class="modal-body">
+                        <div class="call-number">
+                          <a href="tel:seller.phone">
+                            <span>{{seller.phone}}</span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">OK</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Modal -->
+
                 <div class="container container-verified">
                   <h5>CHỨNG NHẬN:</h5>
                   <hr class="hr">
@@ -216,14 +239,6 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="container">
-                  <h6 class="expert-check">ĐÁNH GIÁ CỦA CHUYÊN GIA: </h6>
-                  <hr class="hr">
-                </div>
-
-
-
                <!--  <div class="gauge">
                    <div class="category poor">
                     <span class="char">T</span>

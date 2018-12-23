@@ -222,62 +222,25 @@ p {
     font-size: 15px;
 }
 
-.expert-check {
-    font-size: 18px;
-    margin-top: 1em;
-    color: #00a3cb;
-    font-weight: 400;
+.call-number {
+	margin: auto;
+	width: 50%;
+	text-align: center;
+	border: 1px solid #f49c20;
 }
 
-.gauge {
-    position: relative;
-    margin: 15px auto;
-    width: 300px;
-    height: 150px;
-    background: #efefef;
-    border-radius: 400px 400px 0 0;
-    overflow: hidden;
-    box-shadow: 0 1px 5px #999;
+.call-number span {
+	color: #f49c20;
+	font-weight: bold;
 }
 
-.poor {
-    background: pink;
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+.modal-footer button {
+	background-color: #f49c20;
+	border: 1px solid #f49c20;
 }
 
-.fair {
-    background: #ffe5cc;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-
-.good {
-    background: #ffc;
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-}
-
-.excellent {
-    background: #cfc;
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.needle {
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    z-index: 2;
-    margin-left: -8px;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 110px solid #000;
-    border-radius: 0 0 10px 10px;
-    -webkit-transform: rotate(var(--needle-degree));
-    transform: rotate(var(--needle-degree));
-    -webkit-transform-origin: center bottom;
-    transform-origin: center bottom;
-    -webkit-animation: needle-data-v-235b44a8 4s 1;
-    animation: needle-data-v-235b44a8 4s 1;
+.modal-footer button:hover {
+	background-color: white;
+	border: 1px solid #f49c20;
+	color: #f49c20;
 }
