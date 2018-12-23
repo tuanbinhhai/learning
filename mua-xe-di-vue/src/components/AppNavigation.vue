@@ -11,10 +11,10 @@
         <router-link :to="'/'" exact class="nav-link nav-text" active-class="active" data-toggle="tab" role="tab">Home</router-link>
       </li>
       <li class="nav-item">
-        <router-link :to="{ name: 'Compare' }" exact class="nav-link nav-text" data-toggle="tab" role="tab">Compare</router-link>
+        <router-link :to="{ name: 'Compare' }" exact class="nav-link nav-text" active-class="active" data-toggle="tab" role="tab">Compare</router-link>
       </li>
       <li class="nav-item">
-        <router-link :to="{ name: 'Review' }" exact class="nav-link nav-text" data-toggle="tab" role="tab">Review</router-link>
+        <router-link :to="{ name: 'Review' }" exact class="nav-link nav-text" active-class="active" data-toggle="tab" role="tab">Review</router-link>
       </li>
       <li class="nav-item" @click="checkAuth_beforecontinue()">
         <router-link :to="{ name: 'SellCar' }" exact class="nav-link nav-text" data-toggle="tab" role="tab">Sell</router-link>
@@ -26,7 +26,7 @@
          <a class="dropdown-item" @click="routerusersellcar()">Xe đang bán</a>
          <a class="dropdown-item" @click="routeruserdraftcar()">Xe lưu nháp</a>
          <a class="dropdown-item" @click="routerusersavecar()">Xe yêu thích</a>
-         <a <button class="nav-link signout-btn" v-if="userStatus" @click="logout()">Đăng xuất</button></a>
+         <a> <button class="nav-link signout-btn" v-if="userStatus" @click="logout()">Đăng xuất</button></a>
         <!--  <a class="dropdown-item" @click="routeruserinfo()">{{this.JsonContent.userinfo}}</a>
          <a class="dropdown-item" @click="routerusersellcar()">{{this.JsonContent.sellinglist}}</a>
          <a class="dropdown-item" @click="routeruserdraftcar()">{{this.JsonContent.draftlist}}</a>
@@ -46,7 +46,7 @@
 
 <script>
   import auth from '../auth/index.js'
-  import router from '../router/'
+  // import router from '../router/'
 
   export default {
     name: 'navigation',

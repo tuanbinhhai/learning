@@ -6,6 +6,7 @@ import signup from '../components/Signup/signup.vue'
 import Review from '../components/Review/Review.vue'
 import Search from '../components/Search/Search.vue'
 import Detail from '../components/Detail/Detail.vue'
+import Compare from '../components/Compare/Compare.vue'
 import 'bootstrap'
 import pagination from 'vuejs-uib-pagination'
 
@@ -45,6 +46,12 @@ export default new Router({
       name: 'Detail',
       component: Detail
     },
+    {
+      path: '/compare',
+      name: 'Compare',
+      component: Compare,
+      props: true
+    }
   ],
   mode: 'history'
 })

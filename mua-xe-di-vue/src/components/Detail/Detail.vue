@@ -8,7 +8,8 @@
             <h1>Lexus LX</h1>
           </div>
           <div class="col-md-6 col-compare-save">
-            <span class="compareCar">
+            <span class="compareCar" @click="isCompareFunc()"
+                  :class="{ 'compare-active': isCompare }">
                <i id="fa-compare" class="fas fa-plus-square"></i>
                <span>Thêm vào so sánh</span>
             </span>
@@ -170,6 +171,7 @@
                       <div class="col-md-2">
                         <img  src="https://www.bootdey.com/img/Content/user_1.jpg" alt="user profile image" class="img-avatar">
                       </div>
+
                       <div class="col-md-10 user-comment" v-for="comment in comments">
                         <div class="cmt-content">
                           <h5 class="post-name">{{comment.user_name}}</h5>
@@ -275,7 +277,7 @@
                       <span class="char">I</span>
                     </div>
                     <div class="needle" style="--needle-degree:80deg;">
-                      
+
                     </div>
                 </div> -->
 
