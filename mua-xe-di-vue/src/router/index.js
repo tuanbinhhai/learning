@@ -7,6 +7,7 @@ import Review from '../components/Review/Review.vue'
 import Search from '../components/Search/Search.vue'
 import Detail from '../components/Detail/Detail.vue'
 import Compare from '../components/Compare/Compare.vue'
+import SellCar from '../components/SellCar/Sellcar.vue'
 import 'bootstrap'
 import pagination from 'vuejs-uib-pagination'
 
@@ -50,6 +51,12 @@ export default new Router({
       path: '/compare',
       name: 'Compare',
       component: Compare,
+      props: true
+    },
+    {
+      path: '/sellcar',
+      name: 'SellCar',
+      component: SellCar,
       props: true
     }
   ],

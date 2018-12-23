@@ -16,8 +16,9 @@
       <li class="nav-item">
         <router-link :to="{ name: 'Review' }" exact class="nav-link nav-text" active-class="active" data-toggle="tab" role="tab">Review</router-link>
       </li>
-      <li class="nav-item" @click="checkAuth_beforecontinue()">
-        <router-link :to="{ name: 'SellCar' }" exact class="nav-link nav-text" data-toggle="tab" role="tab">Sell</router-link>
+      <!-- <li class="nav-item" @click="checkAuth_beforecontinue()"> -->
+      <li class="nav-item">
+        <router-link :to="{ name: 'SellCar' }" exact class="nav-link nav-text" active-class="active" data-toggle="tab" role="tab">Sell</router-link>
       </li>
       <li v-if="userStatus" class="nav-item">
        <img v-bind:src="userava" class="img-avatar" id="useravar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

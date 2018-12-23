@@ -9,12 +9,13 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import pagination from "vuejs-uib-pagination";
+import Croppa from 'vue-croppa'
 
 
 library.add(faCoffee)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
-
+Vue.use(Croppa)
 Vue.use(VueResource)
 Vue.use(VeeValidate)
 Vue.use(pagination);

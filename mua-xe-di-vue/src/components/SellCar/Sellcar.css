@@ -1,0 +1,444 @@
+#sellcar {
+  flex-grow: 1;
+}
+/*STEP 1*/
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: table;
+  transition: opacity .3s ease;
+}
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+.modal-container {
+  width: 800px;
+  margin: 0px auto;
+  padding: 30px 0px 10px 0px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+  transition: all .3s ease;
+}
+.modal-footer {
+  padding: 10px 20px 10px 0;
+}
+.modal-error {
+  text-align: center;
+  color: #DD115C;
+}
+.modal-enter {
+  opacity: 0;
+}
+
+.modal-leave-active {
+  opacity: 0;
+}
+.modal-enter .modal-container,
+.modal-leave-active .modal-container {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+.close-button {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  box-sizing: border-box;
+  line-height: 50px;
+  display: inline-block;
+}
+.close-button:before, .close-button:after {
+  transform: rotate(-45deg);
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 950%;
+  margin-top: -5px;
+  margin-left: -25px;
+  display: block;
+  height: 10px;
+  width: 30px;
+  background-color: #fff;
+  transition: all 0.25s ease-out;
+}
+.close-button:after {
+  transform: rotate(-135deg);
+}
+.close-button:hover:before, .close-button:hover:after {
+  transform: rotate(0deg);
+}
+#btn-modal {
+  width: 100px;
+}
+/*IMG*/
+.row-filter {
+  margin-bottom: 2em;
+}
+#uploadImage {
+  width: 90px;
+  opacity: 0.5;
+  margin: 10px 10px 10px 145px;
+  float: left;
+}
+#show-image {
+  width: 150px;
+  height: 87px;
+  float: left;
+  margin: 10px;
+  display: inline-block;
+}
+#remove-img {
+  color: #007BFF;
+  font-size: 25px;
+  float: left;
+  margin-left: -15px;
+}
+.error-image {
+  margin-left: 30em;
+  color: #DD115C;
+}
+.error-nocar-image {
+  margin-left: 18em;
+  color: #DD115C;
+}
+.error-car {
+  margin-top: 10px;
+  color: #DD115C;
+}
+.loading-upload {
+  margin-left: 35em;
+}
+#col1-step1-left {
+  padding-left: 135px;
+  padding-right: 0px;
+}
+#col1-step1-right {
+  padding-right: 135px;
+  padding-left: 0px;
+}
+#col2-step1-left {
+  padding-left: 250px;
+  padding-right: 0px;
+}
+#col2-step1-right {
+  padding-right: 250px;
+  padding-left: 0px;
+}
+.header-step1 {
+  margin-bottom: 10px;
+}
+#dropdownMenuButton {
+  background: #ffffff;
+  color: #000000;
+  border:1px solid #999999;
+  text-align: left;
+}
+#dropdownMenuButton:hover{
+  cursor: pointer;
+}
+#dropdown-menu-large {
+  max-height: 355px;/* you can change as you need it */
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 190px;
+}
+.dropdown-item:hover{
+  cursor: pointer;
+}
+
+.dropdown-step1 {
+  width: 190px;
+  height: 38px;
+}
+#km-input {
+  width: 190px;
+  margin-left: 12px;
+}
+.caret-down {
+  position: absolute;
+  left: 185px;
+  top: 10px;
+}
+.caret-down-mid {
+  position: absolute;
+  right: 100px;
+  top: 10px;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+#btn-origin {
+  margin-left: 10px;
+}
+.active-car-info {
+  background: #007BFF !important;
+  color: #fff !important;
+}
+#row-color {
+  margin-left: 27%;
+}
+#btn-color {
+  transition: all .2s ease-in-out;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  opacity: 0.6;
+}
+.active-color {
+  opacity: 1 !important;
+  border: 2px solid #007BFF !important;
+  transform: scale(1.5) !important;
+}
+#btn-color:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
+#btn-next-step1 {
+  width: 200px;
+  color: black;
+  border: 1px solid #f49c20;
+  background: #f49c20;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 5px 20px;
+}
+#btn-next-step1:hover {
+  background: #f49c20;
+  color: black;
+}
+/*END STEP1*/
+/*STEP 2 PRICE*/
+.different-price-error {
+  margin-top: 10px;
+  font-size: 15px;
+  color: #ee3c4b;
+}
+.price-range {
+  margin-top: 10px;
+}
+.recommend-price {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+#recommend-price-num {
+  font-size: 22px;
+  color: #01d103;
+}
+.recommend-price-warning {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #999999;
+}
+/*END STEP 2 PRICE*/
+#Step3 {
+  margin-top: 20px;
+  margin-left: 18%;
+  width: 80%
+}
+#Step2 {
+  margin-top: 20px;
+  margin-left: 18%;
+}
+.container_step4{
+  margin-left: 10%;
+}
+.step3opt .step2opt {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#sellcar > .pagetitle{
+  margin-left: 8%;
+}
+.main-title {
+  margin-top: 2%;
+}
+.sellcartitle {
+  margin-left: 20%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.title-sellcar {
+  text-align: left;
+  color: #00adcf;
+}
+.service-info {
+  text-align: left;
+  font-size: 13px;
+}
+.title-info {
+  border-bottom: 1px solid #00adcf;
+  text-align: left;
+  color: #00adcf;
+}
+.title-info-step2 {
+  margin-top: 5%;
+  text-align: left;
+}
+#Step2 .step2-description, #Step2 .step2-price {
+  margin-left: -0.5%;
+  resize: none;
+  -moz-border-bottom-colors: none;
+ -moz-border-left-colors: none;
+ -moz-border-right-colors: none;
+ -moz-border-top-colors: none;
+ background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
+ border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;
+ border-image: none;
+ border-radius: 6px 6px 6px 6px;
+ border-style: none solid solid none;
+ border-width: medium 1px 1px medium;
+ box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+ color: #555555;
+ font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+ font-size: 1em;
+ line-height: 1.4em;
+ padding: 5px 8px;
+ transition: background-color 0.2s ease 0s;
+}
+#Step2 .step2-description:focus, #Step2 .step2-price:focus {
+    background: none repeat scroll 0 0 #FFFFFF;
+    outline-width: 0;
+}
+#Step2 .step2-description {
+width: 100%;
+}
+#Step2 .step2-price {
+width: 10%;
+}
+#Step2 .is-danger {
+  display: inline-block;
+  color: red;
+  font-size: 0.8em
+}
+.description {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: left;
+
+}
+#Step3 .btn-option {
+  width: 80%;
+  height: 90%;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  border-color: rgb(111, 111, 111);
+  border-width: thin;
+  background-color: transparent;
+  cursor: pointer;
+}
+#Step3 .btn-option:hover {
+  background-color: #f49c20;
+}
+#Step3 .option-active {
+  background-color: #f49c20;
+  color: white;
+}
+.btn-primary{
+  margin-left: 20%;
+}
+#sellcar .navi-button {
+  margin-left: 20%;
+
+}
+#sellcar .btn-continue, .btn-post {
+  margin-top: 30px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #f49c20;
+  background: #f49c20;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+#sellcar .btn-continue:hover, .btn-post:hover {
+  background: #f49c20;
+  color: black;
+}
+.btn-post:disabled {
+    cursor: not-allowed;
+    color: white;
+    background: rgb(198, 194, 194);
+}
+.btn-savedraft {
+  margin-top: 30px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #f49c20;
+  background: transparent;
+  text-align: center;
+  color: #f49c20;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.btn-savedraft:hover {
+  background: #f49c20;
+  color: white;
+}
+.infodescriotion {
+  text-align: left;
+  margin-top: 10px;
+}
+#sellcar .tablinks {
+  padding: 10px;
+  color: #A3A4A4;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  border-color: rgb(63, 233, 213);
+  border-width: thin;
+  padding: 5px;
+  width: 15%;
+  transition: 0.3s;
+}
+#sellcar .tablinks:hover {
+  color: #A3A4A4;
+  background-color: transparent;
+}
+#sellcar .step-active {
+  background: #00adcf;
+  color: #fff;
+}
+#title-check {
+  width: 120%;
+  margin-top: 8%;
+  margin-left: 2%;
+  text-align: center;
+}
+.msgDifferent {
+  color: #ee3c4b;
+  text-align: center;
+}
+.msgDraft {
+  color: #62B009;
+}
+.btn-savedraft:disabled {
+    cursor: not-allowed;
+    color: white;
+    background: rgb(198, 194, 194);
+}
+.confirm-admin-msg {
+  color: #62B009;
+  font-size: 18px;
+}
+.fa-check-square-o {
+  color: #62B009;
+}
+/*CROP*/
+.sk-fading-circle{position:absolute}.sk-fading-circle .sk-circle{width:100%;height:100%;position:absolute;left:0;top:0}.sk-fading-circle .sk-circle .sk-circle-indicator{display:block;margin:0 auto;width:15%;height:15%;border-radius:100%;-webkit-animation:sk-circleFadeDelay 1s infinite ease-in-out both;animation:sk-circleFadeDelay 1s infinite ease-in-out both}.sk-fading-circle .sk-circle2{-webkit-transform:rotate(30deg);transform:rotate(30deg)}.sk-fading-circle .sk-circle3{-webkit-transform:rotate(60deg);transform:rotate(60deg)}.sk-fading-circle .sk-circle4{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.sk-fading-circle .sk-circle5{-webkit-transform:rotate(120deg);transform:rotate(120deg)}.sk-fading-circle .sk-circle6{-webkit-transform:rotate(150deg);transform:rotate(150deg)}.sk-fading-circle .sk-circle7{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.sk-fading-circle .sk-circle8{-webkit-transform:rotate(210deg);transform:rotate(210deg)}.sk-fading-circle .sk-circle9{-webkit-transform:rotate(240deg);transform:rotate(240deg)}.sk-fading-circle .sk-circle10{-webkit-transform:rotate(270deg);transform:rotate(270deg)}.sk-fading-circle .sk-circle11{-webkit-transform:rotate(300deg);transform:rotate(300deg)}.sk-fading-circle .sk-circle12{-webkit-transform:rotate(330deg);transform:rotate(330deg)}.sk-fading-circle .sk-circle2 .sk-circle-indicator{-webkit-animation-delay:-.91667s;animation-delay:-.91667s}.sk-fading-circle .sk-circle3 .sk-circle-indicator{-webkit-animation-delay:-.83333s;animation-delay:-.83333s}.sk-fading-circle .sk-circle4 .sk-circle-indicator{-webkit-animation-delay:-.75s;animation-delay:-.75s}.sk-fading-circle .sk-circle5 .sk-circle-indicator{-webkit-animation-delay:-.66667s;animation-delay:-.66667s}.sk-fading-circle .sk-circle6 .sk-circle-indicator{-webkit-animation-delay:-.58333s;animation-delay:-.58333s}.sk-fading-circle .sk-circle7 .sk-circle-indicator{-webkit-animation-delay:-.5s;animation-delay:-.5s}.sk-fading-circle .sk-circle8 .sk-circle-indicator{-webkit-animation-delay:-.41667s;animation-delay:-.41667s}.sk-fading-circle .sk-circle9 .sk-circle-indicator{-webkit-animation-delay:-.33333s;animation-delay:-.33333s}.sk-fading-circle .sk-circle10 .sk-circle-indicator{-webkit-animation-delay:-.25s;animation-delay:-.25s}.sk-fading-circle .sk-circle11 .sk-circle-indicator{-webkit-animation-delay:-.16667s;animation-delay:-.16667s}.sk-fading-circle .sk-circle12 .sk-circle-indicator{-webkit-animation-delay:-83.33ms;animation-delay:-83.33ms}@-webkit-keyframes sk-circleFadeDelay{0%,100%,39%{opacity:0}40%{opacity:1}}@keyframes sk-circleFadeDelay{0%,100%,39%{opacity:0}40%{opacity:1}}.croppa-container{display:inline-block;cursor:pointer;-webkit-transition:all .3s;transition:all .3s;position:relative;font-size:0;-ms-flex-item-align:start;align-self:flex-start;background-color:#e6e6e6}.croppa-container canvas{-webkit-transition:all .3s;transition:all .3s}.croppa-container:hover{opacity:.7}.croppa-container.croppa--dropzone{-webkit-box-shadow:inset 0 0 10px #333;box-shadow:inset 0 0 10px #333}.croppa-container.croppa--dropzone canvas{opacity:.5}.croppa-container.croppa--disabled-cc:hover,.croppa-container.croppa--disabled:hover,.croppa-container.croppa--has-target:hover{opacity:1}.croppa-container.croppa--disabled-cc{cursor:default}.croppa-container.croppa--has-target{cursor:move}.croppa-container.croppa--has-target.croppa--disabled-mz{cursor:default}.croppa-container.croppa--disabled{cursor:not-allowed}.croppa-container svg.icon-remove{position:absolute;background:#fff;border-radius:50%;-webkit-filter:drop-shadow(-2px 2px 2px rgba(0,0,0,.7));filter:drop-shadow(-2px 2px 2px rgba(0, 0, 0, .7));z-index:10;cursor:pointer;border:2px solid #fff}
+/*END CROP*/
