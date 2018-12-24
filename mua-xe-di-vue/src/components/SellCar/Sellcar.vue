@@ -600,9 +600,9 @@
       <div class="col-md-2 step-left">
         <button type="button" class="btn-continue" @click="ActiveStep3()">Back</button>
       </div>
-      <div class="col-md-2 step-left">
+      <!-- <div class="col-md-2 step-left">
         <button type="button" class="btn-savedraft" @click="SaveDraft()" :disabled="savedraft">Save Draff</button>
-      </div>
+      </div> -->
       <div class="col-md-2 step-right">
         <button type="button" class="btn-post" @click="PostCar()" :disabled="showDifferentDraft">Save</button>
       </div>
